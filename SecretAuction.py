@@ -7,7 +7,7 @@ count=True
 def find_hightest_bidder(bidding_record):
     # {"aman":200,"jey":32}
     high=0
-    winner = ""
+    winner=""
     for bidder in bidding_record:
         bid_amount = bidding_record[bidder]
         if bid_amount>high:
@@ -15,12 +15,11 @@ def find_hightest_bidder(bidding_record):
             winner = bidder
     print(f"The winner is {winner} with bid of ${high}")
             
-
 while count:
-    name = input("What is your name : ")
-    bid = int(input("Enter bid prize : $"))
+    name = input("What is your name: ")
+    bid = int(input("Enter bid prize: $"))
     bid_compare[name]=bid
-    next = input("Any bidder available? yes or no : ").lower()
+    next = input("Any bidder available? yes or no: ").lower()
     if next=="no":
         count=False
         os.system("cls")
