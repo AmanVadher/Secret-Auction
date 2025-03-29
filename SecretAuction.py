@@ -19,7 +19,7 @@ while count:
     name = input("What is your name: ")
     bid = int(input("Enter bid prize: $"))
     bid_compare[name]=bid
-    next = input("Any bidder available? yes or no: ").lower()
+    next = input("Any bidder available? Enter yes or no: ").lower()
     if next=="no":
         count=False
         os.system("cls")
